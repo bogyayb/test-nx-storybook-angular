@@ -11,7 +11,8 @@
           "executor": "@nrwl/angular:package",
           "outputs": ["dist/libs/button"],
           "options": {
-            "project": "libs/button/ng-package.json"
+            "project": "libs/button/ng-package.json",
+            "tsConfig": "libs/button/tsconfig.lib.json"
           },
           "configurations": {
             "production": {
