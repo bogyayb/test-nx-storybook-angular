@@ -1,22 +1,29 @@
 import { moduleMetadata, Story, Meta } from '@storybook/angular';
-import { ButtonComponent } from './button.component';
+import { ContiButtonComponent } from './button.component';
 
 export default {
-  title: 'ButtonComponent',
-  component: ButtonComponent,
+  title: 'components/ButtonComponent',
+  component: ContiButtonComponent,
   decorators: [
     moduleMetadata({
       imports: [],
     })
   ],
-} as Meta<ButtonComponent>;
+} as Meta<ContiButtonComponent>;
 
-const Template: Story<ButtonComponent> = (args: ButtonComponent) => ({
-  component: ButtonComponent,
+const Template: Story<ContiButtonComponent> = (args: ContiButtonComponent) => ({
+  component: ContiButtonComponent,
   props: args,
 });
 
 
 export const Primary = Template.bind({});
-Primary.args = {
+  Primary.args = {
+    text: "primary",
+    bg: true,
+}
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+  text: "secondary",
 }

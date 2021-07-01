@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ContiButtonComponent } from './button.component';
+import { BoxComponent } from './box.component';
 
-describe('ButtonComponent', () => {
-  let component: ContiButtonComponent;
-  let fixture: ComponentFixture<ContiButtonComponent>;
+describe('BoxComponent', () => {
+  let component: BoxComponent;
+  let fixture: ComponentFixture<BoxComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ContiButtonComponent ]
+      declarations: [ BoxComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ContiButtonComponent);
+    fixture = TestBed.createComponent(BoxComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

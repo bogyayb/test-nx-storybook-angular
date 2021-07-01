@@ -1,1 +1,3 @@
-<p>button works!</p>
+<button *ngIf="!bg" class="red">{{ text }}</button>
+
+<button *ngIf="bg">{{ text }}</button>
